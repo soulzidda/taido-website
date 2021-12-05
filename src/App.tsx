@@ -1,24 +1,31 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import { Routes, Route } from "react-router-dom";
+
+import { Header } from "./components";
+import {
+  TaidoPage,
+  KalenderPage,
+  BarnPage,
+  KontactPage,
+  OmStafPage,
+  SplashPage,
+} from "./pages";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Routes>
+        <Route path="/" element={<SplashPage />} />
+        <Route path="/taido" element={<TaidoPage />} />
+        <Route path="/kalender" element={<KalenderPage />} />
+
+        <Route path="/staf" element={<OmStafPage />} />
+
+        <Route path="/barn" element={<BarnPage />} />
+
+        <Route path="/kontact" element={<KontactPage />} />
+      </Routes>
     </div>
   );
 }
