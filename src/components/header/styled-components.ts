@@ -6,7 +6,6 @@ const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  outline: dashed 1px black;
 `;
 
 const LogoContainer = styled(Link)`
@@ -21,7 +20,7 @@ const OptionsContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 25px;
-  outline: dashed 1px black;
+  border: 1px solid black;
 `;
 
 const OptionLink = styled(Link)`

@@ -1,11 +1,15 @@
 import React from "react";
 
-import { PageContainer, Text } from "./styled-components";
+import { PageContainer, SubHeaderContainer, Text } from "./styled-components";
 
 const OmStafPage: React.FC = () => {
   return (
     <PageContainer>
-      <Text>I am the about page</Text>
+      <SubHeaderContainer>
+        <h2>Om STaF</h2>
+        <h2>Medlemskap och avgifter</h2>
+        <h2>Instructers</h2>
+      </SubHeaderContainer>
     </PageContainer>
   );
 };

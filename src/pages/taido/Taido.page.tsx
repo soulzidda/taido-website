@@ -1,11 +1,15 @@
 import React from "react";
 
-import { PageContainer, Text } from "./styled-components";
+import { PageContainer, SubHeaderContainer, Text } from "./styled-components";
 
 const TaidoPage: React.FC = () => {
   return (
     <PageContainer>
-      <Text>I am the taio page</Text>
+      <SubHeaderContainer>
+        <h2>Information</h2>
+        <h2>Culture</h2>
+        <h2>History</h2>
+      </SubHeaderContainer>
     </PageContainer>
   );
 };
