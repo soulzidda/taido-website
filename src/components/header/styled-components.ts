@@ -12,12 +12,11 @@ const Container = styled.div`
 const LogoContainer = styled(Link)`
   height: 100%;
   width: auto;
-  padding: 25px;
 `;
 
 const OptionsContainer = styled.div`
   height: 70px;
-  width: 50%;
+  min-width: 50%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,9 +29,4 @@ const OptionLink = styled(Link)`
   cursor: pointer;
 `;
 
-export {
-  Container,
-  LogoContainer,
-  OptionsContainer,
-  OptionLink,
-};
+export { Container, LogoContainer, OptionsContainer, OptionLink };

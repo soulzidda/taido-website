@@ -14,15 +14,13 @@ export const Header: React.FC = () => {
       <LogoContainer to="/">
         <Logo className="logo" />
       </LogoContainer>
-        <OptionsContainer>
-          <OptionLink to="/taido">Taido</OptionLink>
-          <OptionLink to="/kalender">Kalender</OptionLink>
-          <OptionLink to="/staf">Om STaF</OptionLink>
-          <OptionLink to="/barn">Barn</OptionLink>
-          <OptionLink to="/kontact">Kontakt</OptionLink>
-        </OptionsContainer>
+      <OptionsContainer>
+        <OptionLink to="/taido">Taido</OptionLink>
+        <OptionLink to="/kalender">Kalender</OptionLink>
+        <OptionLink to="/staf">Om STaF</OptionLink>
+        <OptionLink to="/barn">Barn</OptionLink>
+        <OptionLink to="/kontact">Kontakt</OptionLink>
+      </OptionsContainer>
     </Container>
   );
 };
-
-//<img src={logo} className="App-logo" alt="logo" />

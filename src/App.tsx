@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import { Header } from "./components";
+import { Header, Footer } from "./components";
 import {
   TaidoPage,
   KalenderPage,
@@ -19,13 +19,11 @@ function App() {
         <Route path="/" element={<SplashPage />} />
         <Route path="/taido" element={<TaidoPage />} />
         <Route path="/kalender" element={<KalenderPage />} />
-
         <Route path="/staf" element={<OmStafPage />} />
-
         <Route path="/barn" element={<BarnPage />} />
-
         <Route path="/kontact" element={<KontactPage />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
