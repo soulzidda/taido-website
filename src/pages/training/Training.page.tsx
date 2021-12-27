@@ -5,6 +5,7 @@ import {
   SubHeaderContainer,
   RowContainer,
   InformationBoxes,
+  OptionLinks,
   Text,
 } from "./styled-components";
 
@@ -30,9 +31,18 @@ const TrainingPage: React.FC = () => {
   return (
     <PageContainer>
       <SubHeaderContainer>
-        <h2 onClick={setTaidoTab}>Taido</h2>
-        <h2 onClick={setStyrkepassetTab}>Styrkepasset</h2>
-        <h2 onClick={setKishimotoTab}>Kishimoto</h2>
+        <OptionLinks active={isTaido} onClick={setTaidoTab}>
+          Taido
+        </OptionLinks>
+        <OptionLinks active={isStyrkepasset} onClick={setStyrkepassetTab}>
+          Styrkepasset
+        </OptionLinks>
+        <OptionLinks
+          active={!isTaido && !isStyrkepasset}
+          onClick={setKishimotoTab}
+        >
+          Kishimoto
+        </OptionLinks>
       </SubHeaderContainer>
 
       {isTaido ? (

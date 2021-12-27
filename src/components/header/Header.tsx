@@ -5,8 +5,9 @@ import {
   OptionLink,
   LogoContainer,
   Container,
+  MainLogo,
 } from "./styled-components";
-import { ReactComponent as Logo } from "../../assets/taido-logo.svg";
+import Logo from "../../assets/taido-logo.png";
 import { useLocation } from "react-router-dom";
 
 export const Header: React.FC = () => {
@@ -15,18 +16,28 @@ export const Header: React.FC = () => {
   return (
     <Container>
       <LogoContainer to="/">
-        <Logo className="logo" />
+        <MainLogo src={Logo} alt={"fireSpot"} />
       </LogoContainer>
       <OptionsContainer
         bottomPadding={
           !(location.includes("/training") || location.includes("/staf"))
         }
       >
-        <OptionLink to="/training">Training</OptionLink>
-        <OptionLink to="/kalender">Kalender</OptionLink>
-        <OptionLink to="/staf">Om STaF</OptionLink>
-        <OptionLink to="/barn">Barn</OptionLink>
-        <OptionLink to="/kontact">Kontakt</OptionLink>
+        <OptionLink active={location.includes("/training")} to="/training">
+          Training
+        </OptionLink>
+        <OptionLink active={location.includes("/kalender")} to="/kalender">
+          Kalender
+        </OptionLink>
+        <OptionLink active={location.includes("/staf")} to="/staf">
+          Om STaF
+        </OptionLink>
+        <OptionLink active={location.includes("/barn")} to="/barn">
+          Barn
+        </OptionLink>
+        <OptionLink active={location.includes("/kontact")} to="/kontact">
+          Kontakt
+        </OptionLink>
       </OptionsContainer>
     </Container>
   );

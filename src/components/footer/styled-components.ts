@@ -7,8 +7,7 @@ const Container = styled.div`
   height: 70px;
   align-items: center;
   margin-top: 20px;
-  margin-bottom: 25px;
-  outline: dashed 1px black;
+  background-color: red;
 `;
 
 const Text = styled.text`

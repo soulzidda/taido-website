@@ -8,7 +8,9 @@ import {
   SecondaryInfoContainer,
   TertiaryInfoContainer,
   ColumnContainer,
+  List,
   Text,
+  Header,
 } from "./styled-components";
 
 const SplashPage: React.FC = () => {
@@ -16,62 +18,69 @@ const SplashPage: React.FC = () => {
     <PageContainer>
       <ContentRow>
         <InformationContainer>
-          <h2>Welcome</h2>
+          <Header>Välkommen till Stockholms Taidoförening!</Header>
           <Text>
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Posuere
-            tincidunt torquent fermentum turpis fermentum massa duis scelerisque
-            nec eget nullam integer nec. Placerat netus mollis mollis donec
-            senectus libero torquent ex. Enim viverra eleifend ultricies tempor
-            massa vestibulum eros class platea suscipit ad habitant. Id sapien
-            posuere faucibus tellus a maximus mollis tincidunt neque convallis
-            dictum. Platea euismod rhoncus mollis eu penatibus at habitant
-            ultrices vel finibus. Aconvallis elit tellus suspendisse arcu hac
-            euismod blandit. Mi dictum urna ac ridiculus auctor dictum potenti
-            litora justo sit placerat felis sodales.
+            Vi erbjuder allsidig fysisk och mental träning för både barn och
+            vuxna. Hos oss kan du träna Taido, en japansk akrobatisk kampsport.
+            Eller Kishimoto, en traditionell karatestil från Okinawa. Vi har
+            även Styrkepasset för dig som söker en svettig, utmanande men rolig
+            träningsform. Du kan även boka självförsvarskurser med ESDS och
+            fallpreventionskurser med Falla rätt.
+          </Text>
+          <Text>
+            Vi möter dig utifrån dina förutsättningar för din personliga
+            utveckling.
           </Text>
           <br />
           <Text>
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Posuere
-            tincidunt torquent fermentum turpis fermentum massa duis scelerisque
-            nec eget nullam integer nec. Placerat netus mollis mollis donec
-            senectus libero torquent ex. Enim viverra eleifend ultricies tempor
-            massa vestibulum eros class platea suscipit ad habitant. Id sapien
-            posuere faucibus tellus a maximus mollis tincidunt neque convallis
-            dictum. Platea euismod rhoncus mollis eu penatibus at habitant
-            ultrices vel finibus. Aconvallis elit tellus suspendisse arcu hac
-            euismod blandit. Mi dictum urna ac ridiculus auctor dictum potenti
-            litora justo sit placerat felis sodales.
+            Hos oss tränar du utifrån dina ambitioner. Vi passar dig som vill:
+          </Text>
+          <ul>
+            <List color="white">Träna för att det är kul</List>
+            <List>Komma i form</List>
+            <List>Utmana dig själv</List>
+            <List>Pröva på att tävla</List>
+            <List>Elitsatsa</List>
+          </ul>
+          <Text>
+            Kom och testa 3 gånger gratis! Vi finns i Gubbängen, Vällingby och
+            Nacka!
+          </Text>
+          <Text>
+            Mer info hittar du här (länka till träningstider/kontakuppgifter)
           </Text>
         </InformationContainer>
         <SecondaryInfoContainer>
-          <h3>Contact details</h3>
+          <Header>Kontakt</Header>
+          <Text>Gubbängen</Text>
+          <Text>Taido vuxna: Mikael Jansson 070 424 79 13</Text>
+          <Text>Taido barn: Eddie Herlin 073 490 43 15</Text>
+          <Text>Kishimoto: Mikael Jansson 070 424 79 13</Text>
           <Text>
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Posuere
-            tincidunt torquent fermentum turpis fermentum massa duis scelerisque
-            nec eget nullam integer nec. Placerat netus mollis mollis donec
-            senectus libero torquent ex. Enim viverra eleifend ultricies tempor
-            massa vestibulum eros class platea suscipit ad habitant. Id sapien
-            posuere faucibus tellus a maximus mollis tincidunt neque convallis
-            dictum. Platea euismod rhoncus mollis eu penatibus at habitant
-            ultrices vel finibus. Aconvallis elit tellus suspendisse arcu hac
-            euismod blandit. Mi dictum urna ac ridiculus auctor dictum potenti
-            litora justo sit placerat felis sodales.
+            Styrkepasset: Hannah Kanjah 070 787 97 46, Kim van Wijk 070 722 52
+            67
           </Text>
+          <br />
+          <Text>Vällingby</Text>
+          <Text>Taido: Håkan Karlsson 070 277 26 39</Text>
+          <br />
+          <Text>Nacka</Text>
+          <Text>Shurite: Eddie Herlin 073 490 43 15</Text>
         </SecondaryInfoContainer>
       </ContentRow>
       <ContentRow>
         <NewsContainer>
-          <h2>News container</h2>
+          <Header>News container</Header>
         </NewsContainer>
         <ColumnContainer>
           <div>
             <TertiaryInfoContainer>
-              <h3>Links to social media</h3>
+              <Header>Links to social media</Header>
             </TertiaryInfoContainer>
           </div>
           <div>
             <TertiaryInfoContainer>
-              <h3>calender?</h3>
+              <Header>calender?</Header>
             </TertiaryInfoContainer>
           </div>
         </ColumnContainer>

@@ -13,7 +13,7 @@ import {
 
 function App() {
   return (
-    <div>
+    <div style={{ backgroundColor: "black" }}>
       <Header />
       <Routes>
         <Route path="/" element={<SplashPage />} />

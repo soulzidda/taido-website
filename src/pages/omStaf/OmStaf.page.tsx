@@ -4,6 +4,7 @@ import {
   PageContainer,
   SubHeaderContainer,
   InformationBoxes,
+  OptionLinks,
   Text,
 } from "./styled-components";
 
@@ -29,9 +30,18 @@ const OmStafPage: React.FC = () => {
   return (
     <PageContainer>
       <SubHeaderContainer>
-        <h2 onClick={setAboutTab}>Om STaF</h2>
-        <h2 onClick={setMembersTab}>Medlemskap och avgifter</h2>
-        <h2 onClick={setInstructorsTab}>Instructers</h2>
+        <OptionLinks active={isAbout} onClick={setAboutTab}>
+          Om STaF
+        </OptionLinks>
+        <OptionLinks active={isMembers} onClick={setMembersTab}>
+          Medlemskap och avgifter
+        </OptionLinks>
+        <OptionLinks
+          active={!isMembers && !isAbout}
+          onClick={setInstructorsTab}
+        >
+          Instructers
+        </OptionLinks>
       </SubHeaderContainer>
 
       {isAbout ? (
