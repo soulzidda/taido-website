@@ -2,7 +2,7 @@ import { BarnPage } from "./barn";
 import { KalenderPage } from "./kalender";
 import { KontactPage } from "./kontact";
 import { OmStafPage } from "./omStaf";
-import { TaidoPage } from "./taido/";
+import { TrainingPage } from "./training";
 import { SplashPage } from "./splash";
 
 export {
@@ -10,6 +10,6 @@ export {
   KontactPage,
   KalenderPage,
   OmStafPage,
-  TaidoPage,
+  TrainingPage,
   SplashPage,
 };

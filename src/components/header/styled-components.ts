@@ -13,13 +13,13 @@ const LogoContainer = styled(Link)`
   width: auto;
 `;
 
-const OptionsContainer = styled.div`
+const OptionsContainer = styled("div")<{ bottomPadding: boolean }>`
   height: 70px;
   min-width: 50%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: ${(p) => (p.bottomPadding ? 25 : 0)}px;
   border: 1px solid black;
 `;
 

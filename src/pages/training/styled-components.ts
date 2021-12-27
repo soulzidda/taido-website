@@ -18,10 +18,16 @@ const SubHeaderContainer = styled.div`
   cursor: pointer;
 `;
 
-const InformationBoxes = styled.div`
+const RowContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  width: 80%;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 30px;
+`;
+
+const InformationBoxes = styled.div`
+  width: 45%;
   height: 400px;
   border: 1px solid black;
 `;
@@ -30,4 +36,10 @@ const Text = styled.h2`
   color: black;
 `;
 
-export { PageContainer, SubHeaderContainer, InformationBoxes, Text };
+export {
+  PageContainer,
+  SubHeaderContainer,
+  RowContainer,
+  InformationBoxes,
+  Text,
+};

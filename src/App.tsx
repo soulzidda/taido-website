@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 
 import { Header, Footer } from "./components";
 import {
-  TaidoPage,
+  TrainingPage,
   KalenderPage,
   BarnPage,
   KontactPage,
@@ -17,7 +17,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<SplashPage />} />
-        <Route path="/taido" element={<TaidoPage />} />
+        <Route path="/training" element={<TrainingPage />} />
         <Route path="/kalender" element={<KalenderPage />} />
         <Route path="/staf" element={<OmStafPage />} />
         <Route path="/barn" element={<BarnPage />} />
