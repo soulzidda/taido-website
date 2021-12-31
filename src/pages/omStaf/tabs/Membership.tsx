@@ -1,38 +1,37 @@
-import styled from "styled-components";
+import {
+  Container,
+  SubHeading,
+  ParagraphText,
+  BannerText,
+} from "./styled-components";
 
 export const Membership = () => {
   return (
     <Container>
-      <h3>Medlemskap</h3>
-      <p>
+      <SubHeading>Medlemskap</SubHeading>
+      <ParagraphText>
         Som medlem i Stockholms Taidoförening får du tillgång till hela vårt
         träningsutbud*, alla kulturevenemang och alla sociala event.
         Medlemsavgiften täcker även en försäkringsavgift. Du är då försäkrad på
         alla träningspass, läger och tävlingar som du deltar på med oss.
-      </p>
-      <span>*träningsavgift tillkommer</span>
-      <h3>Stödmedlemskap</h3>
-      <p>
+      </ParagraphText>
+      <BannerText>*träningsavgift tillkommer</BannerText>
+      <SubHeading>Stödmedlemskap</SubHeading>
+      <ParagraphText>
         årt stödmedlemskap är för dig som vill stötta föreningen och ta del av
         vårt utbud av sociala event och kulturevent men inte är intresserad av
         våra träningsformer.
-      </p>
+      </ParagraphText>
+      <BannerText>Medlemsavgift 400kr/år</BannerText>
       <br />
-      <span>Medlemsavgift 400kr/år</span>
+      <BannerText>Stödmedlemsavgift 200kr/år</BannerText>
       <br />
-      <span>Stödmedlemsavgift 200kr/år</span>
+      <SubHeading>Taido</SubHeading>
+      <BannerText>Terminsavgift vuxen 16+ år: 1700kr</BannerText>
       <br />
-      <h3>Taido</h3>
+      <BannerText>Terminsavgift ungdom 13-15 år: 900kr</BannerText>
       <br />
-      <span>Terminsavgift vuxen 16+ år: 1700kr</span>
-      <br />
-      <span> Terminsavgift ungdom 13-15 år: 900kr</span>
-      <br />
-      <span>Terminsavgift barn 6-12 år: 600kr</span>
+      <BannerText>Terminsavgift barn 6-12 år: 600kr</BannerText>
     </Container>
   );
 };
-
-const Container = styled.div`
-  padding: 0 30px 0 30px;
-`;

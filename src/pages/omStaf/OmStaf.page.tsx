@@ -47,7 +47,7 @@ const OmStafPage: React.FC = () => {
 
       {isAbout ? (
         <InformationBoxes>
-          <Text> about the assosciation</Text>
+          <Text> about the association</Text>
         </InformationBoxes>
       ) : isMembers ? (
         <InformationBoxes>

@@ -11,20 +11,24 @@ import {
   SplashPage,
 } from "./pages";
 
+import { AppContainer, ContentContainer } from "./app.styled-components";
+
 function App() {
   return (
-    <div style={{ backgroundColor: "#242526" }}>
+    <AppContainer>
       <Header />
-      <Routes>
-        <Route path="/" element={<SplashPage />} />
-        <Route path="/training" element={<TrainingPage />} />
-        <Route path="/kalender" element={<KalenderPage />} />
-        <Route path="/staf" element={<OmStafPage />} />
-        <Route path="/barn" element={<BarnPage />} />
-        <Route path="/kontact" element={<KontactPage />} />
-      </Routes>
+      <ContentContainer>
+        <Routes>
+          <Route path="/" element={<SplashPage />} />
+          <Route path="/training" element={<TrainingPage />} />
+          <Route path="/kalender" element={<KalenderPage />} />
+          <Route path="/staf" element={<OmStafPage />} />
+          <Route path="/barn" element={<BarnPage />} />
+          <Route path="/kontact" element={<KontactPage />} />
+        </Routes>
+      </ContentContainer>
       <Footer />
-    </div>
+    </AppContainer>
   );
 }
 

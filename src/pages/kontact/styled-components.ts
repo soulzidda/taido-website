@@ -16,6 +16,20 @@ const EmailFormContainer = styled.div`
   margin: 30px 0 30px 0;
 `;
 
+const ContactBox = styled.div`
+  width: 100%;
+  margin: 30px 30px 30px 30px;
+`;
+
+const LocationBoxContentContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin: 30px 30px 30px 30px;
+  justify-content: space-between;
+`;
+
+const LocationBox = styled.div``;
+
 const InputContainer = styled.div`
   display: flex;
   width: 100%;
@@ -34,7 +48,7 @@ const Input = styled.input`
 `;
 
 const TextField = styled.textarea`
-  height: 50%;
+  height: 65%;
   width: 70%;
   box-sizing: border-box;
 `;
@@ -53,14 +67,40 @@ const SubHeading = styled.h3`
   color: White;
 `;
 
+const LocationSubHeading = styled.h3`
+  color: White;
+  text-align: center;
+`;
+
+const ContactSpacing = styled.div`
+  padding: 5px 0 5px 0;
+`;
+
+const BoldText = styled.span`
+  font-weight: bold;
+  color: White;
+`;
+
+const Text = styled.span`
+  font-weight: normal;
+  color: White;
+`;
+
 export {
   PageContainer,
   EmailFormContainer,
+  ContactBox,
   InputContainer,
   HalfContainer,
+  LocationBoxContentContainer,
+  LocationBox,
+  LocationSubHeading,
   Input,
   TextField,
   ButtonContainer,
   Heading,
+  ContactSpacing,
   SubHeading,
+  BoldText,
+  Text,
 };

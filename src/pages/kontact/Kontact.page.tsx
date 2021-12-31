@@ -3,13 +3,20 @@ import React, { useState } from "react";
 import {
   PageContainer,
   EmailFormContainer,
+  ContactBox,
   InputContainer,
   HalfContainer,
+  LocationBox,
   Input,
+  LocationBoxContentContainer,
+  LocationSubHeading,
   TextField,
   ButtonContainer,
+  ContactSpacing,
   Heading,
   SubHeading,
+  BoldText,
+  Text,
 } from "./styled-components";
 import { sendEmail } from "../../utils/email";
 
@@ -71,9 +78,64 @@ const KontactPage: React.FC = () => {
           <button onClick={onSubmit}>Skicka</button>
         </ButtonContainer>
       </EmailFormContainer>
-      <EmailFormContainer>
-        <h2>Important contacts</h2>
-      </EmailFormContainer>
+      <ContactBox>
+        <div style={{ paddingBottom: 20 }}>
+          <Heading style={{ textAlign: "center" }}>Important contacts</Heading>
+        </div>
+        <LocationBoxContentContainer>
+          <LocationBox>
+            <LocationSubHeading>Gubbengen</LocationSubHeading>
+
+            <ContactSpacing>
+              <BoldText>Taido vuxna:</BoldText>
+              <Text> Mikael Jansson 070 424 79 13</Text>
+            </ContactSpacing>
+
+            <ContactSpacing>
+              <BoldText>Taido barn:</BoldText>
+              <Text> Eddie Herlin 073 490 43 15</Text>
+            </ContactSpacing>
+
+            <ContactSpacing>
+              <BoldText>Kishimoto:</BoldText>
+              <Text> Mikael Jansson 070 424 79 13</Text>
+            </ContactSpacing>
+
+            <ContactSpacing>
+              <BoldText>Styrkepasset:</BoldText>
+              <Text> Hannah Kanjah 070 787 97 46</Text>
+              <br />
+              <BoldText style={{ color: "#242526" }}> Styrkepasset:</BoldText>
+              <Text> Kim van Wijk 070 722 52 67</Text>
+            </ContactSpacing>
+          </LocationBox>
+          <LocationBox>
+            <LocationSubHeading>Vällingby</LocationSubHeading>
+            <ContactSpacing>
+              <BoldText>Taido:</BoldText>
+              <Text> Håkan Karlsson 070 277 26 39</Text>
+            </ContactSpacing>
+          </LocationBox>
+          <LocationBox>
+            <LocationSubHeading>Nacka</LocationSubHeading>
+            <ContactSpacing>
+              <BoldText>Shurite:</BoldText>
+              <Text> Eddie Herlin 073 490 43 15</Text>
+            </ContactSpacing>
+          </LocationBox>
+          <LocationBox>
+            <LocationSubHeading>Andra Kontakt</LocationSubHeading>
+            <ContactSpacing>
+              <BoldText>Kassör :</BoldText>
+              <Text> theresia.aruen@gmail.com</Text>
+            </ContactSpacing>
+            <ContactSpacing>
+              <BoldText>Styrelsen :</BoldText>
+              <Text> ordf@taido.se</Text>
+            </ContactSpacing>
+          </LocationBox>
+        </LocationBoxContentContainer>
+      </ContactBox>
     </PageContainer>
   );
 };
