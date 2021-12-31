@@ -26,7 +26,7 @@ const OptionsContainer = styled("div")<{ bottomPadding: boolean }>`
 const OptionLink = styled(Link)<{ active: boolean }>`
   padding: 10px 15px;
   cursor: pointer;
-  color: Blue;
+  color: White;
   text-align: center;
   text-decoration: none;
   margin: 1rem;

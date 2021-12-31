@@ -35,7 +35,7 @@ const InformationBoxes = styled.div`
 const OptionLinks = styled.h4<{ active: boolean }>`
   padding: 10px 15px;
   cursor: pointer;
-  color: Blue;
+  color: White;
   text-decoration: none;
   text-align: center;
   margin: 1rem;

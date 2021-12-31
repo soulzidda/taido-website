@@ -7,7 +7,7 @@ const PageContainer = styled.div`
   padding-left: 30px;
   padding-right: 30px;
   overflow-y: scroll;
-  background-color: black;
+  background-color: #242526;
 `;
 
 const ContentRow = styled.div`

@@ -22,14 +22,14 @@ const InformationBoxes = styled.div`
   display: flex;
   flex-direction: column;
   width: 80%;
-  height: 400px;
+  height: auto;
   border: 1px solid white;
 `;
 
 const OptionLinks = styled.h4<{ active: boolean }>`
   padding: 10px 15px;
   cursor: pointer;
-  color: Blue;
+  color: White;
   text-decoration: none;
   text-align: center;
   margin: 1rem;

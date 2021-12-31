@@ -11,7 +11,7 @@ const Container = styled.div`
 `;
 
 const Text = styled.text`
-  color: black;
+  color: White;
 `;
 
 export { Container, Text };

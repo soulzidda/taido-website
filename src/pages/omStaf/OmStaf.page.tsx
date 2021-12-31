@@ -7,6 +7,7 @@ import {
   OptionLinks,
   Text,
 } from "./styled-components";
+import { Membership } from "./tabs/Membership";
 
 const OmStafPage: React.FC = () => {
   const [isAbout, setIsAbout] = useState(true);
@@ -50,7 +51,7 @@ const OmStafPage: React.FC = () => {
         </InformationBoxes>
       ) : isMembers ? (
         <InformationBoxes>
-          <Text>menbers cost and shit</Text>
+          <Membership />
         </InformationBoxes>
       ) : (
         <InformationBoxes>
