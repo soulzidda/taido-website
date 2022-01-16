@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import Calendar from "react-calendar";
 
-import { PageContainer, Text } from "./styled-components";
+import { PageContainer } from "./styled-components";
 
 const KalenderPage: React.FC = () => {
+  const [value, onChange] = useState(new Date());
+
   return (
     <PageContainer>
-      <Text>I am the calendar page</Text>
+      <Calendar onChange={onChange} value={value} calendarType="ISO 8601" />
     </PageContainer>
   );
 };

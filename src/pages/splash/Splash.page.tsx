@@ -1,19 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+import Calendar from "react-calendar";
 
 import {
   PageContainer,
   ContentRow,
   InformationContainer,
-  NewsContainer,
   SecondaryInfoContainer,
   TertiaryInfoContainer,
   ColumnContainer,
+  ColumnContainerSpacing,
   List,
   Text,
   Header,
 } from "./styled-components";
+import NewsBox from "../../components/newsBox/NewsBox";
 
 const SplashPage: React.FC = () => {
+  const [value, onChange] = useState(new Date());
+
   return (
     <PageContainer>
       <ContentRow>
@@ -69,20 +73,22 @@ const SplashPage: React.FC = () => {
         </SecondaryInfoContainer>
       </ContentRow>
       <ContentRow>
-        <NewsContainer>
-          <Header>News container</Header>
-        </NewsContainer>
+        <NewsBox />
         <ColumnContainer>
-          <div>
+          <ColumnContainerSpacing>
             <TertiaryInfoContainer>
               <Header>Links to social media</Header>
             </TertiaryInfoContainer>
-          </div>
-          <div>
+          </ColumnContainerSpacing>
+          <ColumnContainerSpacing>
             <TertiaryInfoContainer>
-              <Header>calender?</Header>
+              <Calendar
+                onChange={onChange}
+                value={value}
+                calendarType="ISO 8601"
+              />
             </TertiaryInfoContainer>
-          </div>
+          </ColumnContainerSpacing>
         </ColumnContainer>
       </ContentRow>
     </PageContainer>

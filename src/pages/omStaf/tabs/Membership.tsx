@@ -32,6 +32,14 @@ export const Membership = () => {
       <BannerText>Terminsavgift ungdom 13-15 år: 900kr</BannerText>
       <br />
       <BannerText>Terminsavgift barn 6-12 år: 600kr</BannerText>
+      <SubHeading>Styrkepasset</SubHeading>
+      <BannerText>Terminsavgift: 1700kr</BannerText>
+      <SubHeading>KishimotoDi</SubHeading>
+      <BannerText>Terminsavgift: 600kr</BannerText>
+      <SubHeading>ESDS</SubHeading>
+      <BannerText>Endast bokning. Kontakta oss för en offert.</BannerText>
+      <SubHeading>Falla rätt</SubHeading>
+      <BannerText>Endast bokning. Kontakta oss för en offert.</BannerText>
     </Container>
   );
 };

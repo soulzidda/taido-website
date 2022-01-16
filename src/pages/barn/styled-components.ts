@@ -19,7 +19,6 @@ const RowContainer = styled.div`
 
 const TopRowCards = styled.div`
   width: 30%;
-  border: 1px solid white;
   padding: 10px;
   height: auto;
 `;
@@ -37,7 +36,6 @@ const MapCards = styled.div`
   flex: 1;
   flex-direction: column;
   width: 45%;
-  height: px;
 `;
 
 const MapImage = styled.img`

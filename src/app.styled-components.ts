@@ -10,7 +10,7 @@ const AppContainer = styled.div`
 `;
 
 const ContentContainer = styled.div`
-  padding-bottom: 10%;
+  padding-bottom: 5%;
 `;
 
 export { AppContainer, ContentContainer };

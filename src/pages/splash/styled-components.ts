@@ -22,26 +22,15 @@ const InformationContainer = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 60%;
-  border: 1px solid white;
   padding: 10px;
-`;
-
-const NewsContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  border: 1px solid white;
-  padding: 10px;
-  height: 700px;
 `;
 
 const SecondaryInfoContainer = styled.div`
   display: flex;
   width: 30%;
   height: 40%;
-  border: 1px solid white;
   flex-direction: column;
-  padding: 10px;
+  padding: 10px 20px 0 0;
 `;
 
 const TertiaryInfoContainer = styled.div`
@@ -58,9 +47,11 @@ const ColumnContainer = styled.div`
   width: 30%;
   min-height: 300px;
   flex-direction: column;
-  padding-right: 20px;
-  justify-content: space-between;
-  align-content: space-between;
+  padding-right: 30px;
+`;
+
+const ColumnContainerSpacing = styled.div`
+  padding-bottom: 75px;
 `;
 
 const List = styled("li")`
@@ -80,10 +71,10 @@ export {
   PageContainer,
   ContentRow,
   InformationContainer,
-  NewsContainer,
   SecondaryInfoContainer,
   TertiaryInfoContainer,
   ColumnContainer,
+  ColumnContainerSpacing,
   List,
   Header,
   Text,

@@ -44,8 +44,9 @@ const BarnPage: React.FC = () => {
           </Text>
         </TopRowCards>
         <TopRowCards>
-          <SubHeading>Price</SubHeading>
-          <Text>Pris Medlemsavgift 400kr/år Terminsavgift 700kr/termin</Text>
+          <SubHeading>Pris</SubHeading>
+          <Text>Pris Medlemsavgift 400kr/år </Text>
+          <Text>Terminsavgift 700kr/termin</Text>
         </TopRowCards>
         <TopRowCards>
           <SubHeading>Values And Ethos</SubHeading>
