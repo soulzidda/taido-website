@@ -8,6 +8,8 @@ import {
   Text,
 } from "./styled-components";
 import { Membership } from "./tabs/Membership";
+import { InstructorsTab } from "./tabs/InstructorsTab";
+import { instructors } from "../../utils/instructors";
 
 const OmStafPage: React.FC = () => {
   const [isAbout, setIsAbout] = useState(true);
@@ -27,6 +29,8 @@ const OmStafPage: React.FC = () => {
     setIsAbout(false);
     setIsMembers(false);
   };
+
+  console.log(instructors);
 
   return (
     <PageContainer>
@@ -55,12 +59,7 @@ const OmStafPage: React.FC = () => {
         </InformationBoxes>
       ) : (
         <InformationBoxes>
-          <Text>instructors page</Text>
-          <br />
-          <p>
-            portrait of each instructor, on hover show a magnifying glass and on
-            click show a modal of bigger portrait with their info at the side
-          </p>
+          <InstructorsTab />
         </InformationBoxes>
       )}
     </PageContainer>

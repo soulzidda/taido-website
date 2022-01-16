@@ -16,4 +16,8 @@ const BannerText = styled.span`
   color: white;
 `;
 
-export { Container, SubHeading, ParagraphText, BannerText };
+const List = styled("li")`
+  color: white;
+`;
+
+export { Container, SubHeading, ParagraphText, BannerText, List };

@@ -17,6 +17,13 @@ import NewsBox from "../../components/newsBox/NewsBox";
 
 const SplashPage: React.FC = () => {
   const [value, onChange] = useState(new Date());
+  const listText = [
+    "Träna för att det är kul",
+    "Komma i form",
+    "Utmana dig själv",
+    "Pröva på att tävla",
+    "Elitsatsa",
+  ];
 
   return (
     <PageContainer>
@@ -40,11 +47,9 @@ const SplashPage: React.FC = () => {
             Hos oss tränar du utifrån dina ambitioner. Vi passar dig som vill:
           </Text>
           <ul>
-            <List color="white">Träna för att det är kul</List>
-            <List>Komma i form</List>
-            <List>Utmana dig själv</List>
-            <List>Pröva på att tävla</List>
-            <List>Elitsatsa</List>
+            {listText.map((l) => (
+              <List>{l}</List>
+            ))}
           </ul>
           <Text>
             Kom och testa 3 gånger gratis! Vi finns i Gubbängen, Vällingby och
