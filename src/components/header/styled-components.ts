@@ -6,6 +6,8 @@ const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  background-color: #00286b;
+  // light mode colour background-color: #efebdd;
 `;
 
 const LogoContainer = styled(Link)`

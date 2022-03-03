@@ -53,7 +53,7 @@ const HyperlinkInfoText = styled.span`
 `;
 
 const HyperLink = styled.a`
-  color: red;
+  color: #ffff00;
 `;
 
 export {

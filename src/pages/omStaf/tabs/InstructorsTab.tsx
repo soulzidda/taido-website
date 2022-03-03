@@ -5,8 +5,15 @@ import {
   BannerText,
   List,
 } from "./styled-components";
+import { InstructorCards, InstructorModal } from "../../../components";
+import { InstructorData, instructors } from "../../../utils/instructors";
+import { useState } from "react";
 
 export const InstructorsTab = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [instructorDataModal, setInstructorDataModal] =
+    useState<InstructorData>();
+
   const listText = [
     "Bra social förmåga, att kommunicera, leda och entusiasmera",
     "Planera och strukturera träningspassen",
@@ -18,8 +25,13 @@ export const InstructorsTab = () => {
 
   return (
     <Container>
+      <InstructorModal isOpen={isOpen}>
+        <div>
+          <h1>Instructors Modal</h1>
+        </div>
+      </InstructorModal>
       <SubHeading>Instructors</SubHeading>
-
+      <InstructorCards instructors={instructors} />
       <SubHeading>STaFs Ledarskapsprogram</SubHeading>
       <ParagraphText>
         Stockholms Taidoförening har utvecklat ett speciellt program för att
