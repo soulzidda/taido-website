@@ -3,7 +3,11 @@ import styled from "styled-components";
 const PageContainer = styled.div`
   display: flex;
   flex-direction: column;
+  align-content: space-between;
   align-items: center;
+  padding: 0 30px 0 30px;
+  flex: 1;
+  width: auto;
 `;
 
 const Text = styled.text`

@@ -10,7 +10,13 @@ const AppContainer = styled.div`
 `;
 
 const ContentContainer = styled.div`
-  padding-bottom: 5%;
+  display: flex;
+  flex-direction: row;
 `;
 
-export { AppContainer, ContentContainer };
+const Divider = styled.div`
+  width: 100px;
+  background-color: #00286b;
+`;
+
+export { AppContainer, ContentContainer, Divider };

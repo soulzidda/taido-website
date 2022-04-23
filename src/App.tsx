@@ -11,13 +11,18 @@ import {
   SplashPage,
 } from "./pages";
 
-import { AppContainer, ContentContainer } from "./app.styled-components";
+import {
+  AppContainer,
+  ContentContainer,
+  Divider,
+} from "./app.styled-components";
 
 function App() {
   return (
     <AppContainer>
       <Header />
       <ContentContainer>
+        <Divider />
         <Routes>
           <Route path="/" element={<SplashPage />} />
           <Route path="/training" element={<TrainingPage />} />
@@ -26,6 +31,7 @@ function App() {
           <Route path="/barn" element={<BarnPage />} />
           <Route path="/kontact" element={<KontactPage />} />
         </Routes>
+        <Divider />
       </ContentContainer>
       <Footer />
     </AppContainer>

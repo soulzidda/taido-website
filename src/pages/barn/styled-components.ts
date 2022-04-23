@@ -4,6 +4,7 @@ const PageContainer = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
+  width: auto;
   padding-left: 30px;
   padding-right: 30px;
   align-items: center;
@@ -18,7 +19,7 @@ const RowContainer = styled.div`
 `;
 
 const TopRowCards = styled.div`
-  width: 30%;
+  width: 100%;
   padding: 10px;
   height: auto;
 `;

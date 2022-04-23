@@ -2,12 +2,17 @@ import {
   Container,
   SubHeading,
   ParagraphText,
-  BannerText,
+  ModalSubContainers,
+  TextContainer,
+  ModalContainer,
+  Heading,
   List,
+  ModalSubHeading,
+  Image,
 } from "./styled-components";
 import { InstructorCards, InstructorModal } from "../../../components";
 import { InstructorData, instructors } from "../../../utils/instructors";
-import { useState } from "react";
+import React, { useState } from "react";
 
 export const InstructorsTab = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,12 +31,75 @@ export const InstructorsTab = () => {
   return (
     <Container>
       <InstructorModal isOpen={isOpen}>
-        <div>
-          <h1>Instructors Modal</h1>
-        </div>
+        <Heading>Instructors Modal</Heading>
+        <ModalContainer>
+          <ModalSubContainers>
+            <Image src={instructorDataModal?.image} alt={"fireSpot"} />
+          </ModalSubContainers>
+          <ModalSubContainers>
+            <TextContainer>
+              <span>{instructorDataModal?.name}</span>
+              <span>{instructorDataModal?.type}</span>
+            </TextContainer>
+            <p>{instructorDataModal?.about}</p>
+            <TextContainer>
+              <ModalSubHeading>Instructors</ModalSubHeading>
+              {instructorDataModal?.instructors.map((i) => (
+                <span>{i}</span>
+              ))}
+            </TextContainer>
+            <TextContainer>
+              <ModalSubHeading>Education</ModalSubHeading>
+              <span>{instructorDataModal?.education.text}</span>
+              {instructorDataModal?.education.info.map((e) => (
+                <span>{e}</span>
+              ))}
+            </TextContainer>
+            <TextContainer>
+              <ModalSubHeading>National</ModalSubHeading>
+              {instructorDataModal?.national.map((n) => (
+                <span>{n}</span>
+              ))}
+            </TextContainer>
+            <TextContainer>
+              <ModalSubHeading>Other Martial arts</ModalSubHeading>
+              {instructorDataModal?.otherMartialArts?.map((n) => (
+                <span>{n}</span>
+              ))}
+            </TextContainer>
+            <TextContainer>
+              <ModalSubHeading>Grade</ModalSubHeading>
+              {instructorDataModal?.grade?.text && (
+                <span>{instructorDataModal?.grade?.text}</span>
+              )}
+              {instructorDataModal?.grade?.info.map((n) => (
+                <span>{n}</span>
+              ))}
+            </TextContainer>
+            <TextContainer>
+              <ModalSubHeading>Awards</ModalSubHeading>
+              {instructorDataModal?.awards?.map((n) => (
+                <span>{n}</span>
+              ))}
+            </TextContainer>
+            {instructorDataModal?.domoLicenseInTaido && (
+              <TextContainer>
+                <ModalSubHeading>Domo license in taido</ModalSubHeading>
+                {instructorDataModal?.domoLicenseInTaido?.map((n) => (
+                  <span>{n}</span>
+                ))}
+              </TextContainer>
+            )}
+          </ModalSubContainers>
+        </ModalContainer>
+        <Heading onClick={() => setIsOpen(false)}>Close Modal</Heading>
       </InstructorModal>
       <SubHeading>Instructors</SubHeading>
-      <InstructorCards instructors={instructors} />
+      <InstructorCards
+        instructors={instructors}
+        setVisible={setIsOpen}
+        setData={setInstructorDataModal}
+      />
       <SubHeading>STaFs Ledarskapsprogram</SubHeading>
       <ParagraphText>
         Stockholms Taidoförening har utvecklat ett speciellt program för att

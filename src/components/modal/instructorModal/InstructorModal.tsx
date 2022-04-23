@@ -1,31 +1,25 @@
 import React from "react";
 import Modal from "react-modal";
+import styled from "styled-components";
 
 interface ModalProps {
   isOpen: any;
   children: any;
-  customStyling?: any;
-  centerContent?: boolean;
 }
 
 const InstructorModal: React.FC<ModalProps> = (props) => {
-  const { isOpen, children, customStyling, centerContent } = props;
-
-  const centerStyles = {
-    justifyContent: "center",
-    alignItems: "center",
-  };
-
-  const modalStyles = centerContent && {
-    ...customStyling,
-    ...centerStyles,
-  };
+  const { isOpen, children } = props;
 
   return (
-    <Modal isOpen={isOpen} style={customStyling || modalStyles}>
-      {children}
+    <Modal isOpen={isOpen}>
+      <ModalContainer>{children}</ModalContainer>
     </Modal>
   );
 };
 
 export default InstructorModal;
+
+const ModalContainer = styled.div`
+  width: auto;
+  height: auto;
+`;

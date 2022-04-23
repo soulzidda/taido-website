@@ -109,7 +109,7 @@ const håkanKarlsson: InstructorData = {
   },
   national: [
     "C-instruktörskurs (2004) Svenska budo & Kampsportsförbundet",
-    "  Anatomi-, idrottsskade- och tejpningskurs (2004) Stockholm och Gotlands Budo & Kampsportsförbund",
+    "Anatomi-, idrottsskade- och tejpningskurs (2004) Stockholm och Gotlands Budo & Kampsportsförbund",
     "Smarta rörelser (2007) SISU",
     "C-domar utbildning (2007) World Taido Federations",
     "Barnledarutbildning (2006) SISU",

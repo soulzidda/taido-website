@@ -6,6 +6,8 @@ const PageContainer = styled.div`
   align-content: space-between;
   align-items: center;
   padding: 0 30px 0 30px;
+  flex: 1;
+  width: auto;
 `;
 
 const EmailFormContainer = styled.div`

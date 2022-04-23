@@ -3,7 +3,11 @@ import styled from "styled-components";
 const PageContainer = styled.div`
   display: flex;
   flex-direction: column;
+  align-content: space-between;
   align-items: center;
+  padding: 0 30px 0 30px;
+  flex: 1;
+  width: auto;
 `;
 
 const SubHeaderContainer = styled.div`
@@ -21,9 +25,7 @@ const SubHeaderContainer = styled.div`
 const InformationBoxes = styled.div`
   display: flex;
   flex-direction: column;
-  width: 80%;
   height: auto;
-  border: 1px solid white;
 `;
 
 const OptionLinks = styled.h4<{ active: boolean }>`

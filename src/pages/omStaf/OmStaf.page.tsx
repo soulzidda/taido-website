@@ -30,8 +30,6 @@ const OmStafPage: React.FC = () => {
     setIsMembers(false);
   };
 
-  console.log(instructors);
-
   return (
     <PageContainer>
       <SubHeaderContainer>

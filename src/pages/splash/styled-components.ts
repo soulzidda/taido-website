@@ -4,7 +4,7 @@ const PageContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 30px;
+  padding-left: 20px;
   padding-right: 30px;
   overflow-y: scroll;
   background-color: #242526;
