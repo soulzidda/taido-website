@@ -8,6 +8,7 @@ const PageContainer = styled.div`
   padding: 0 30px 0 30px;
   flex: 1;
   width: auto;
+  margin-top: 50px;
 `;
 
 const SubHeaderContainer = styled.div`
@@ -31,7 +32,7 @@ const InformationBoxes = styled.div`
 const OptionLinks = styled.h4<{ active: boolean }>`
   padding: 10px 15px;
   cursor: pointer;
-  color: White;
+  color: black;
   text-decoration: none;
   text-align: center;
   margin: 1rem;
@@ -40,7 +41,7 @@ const OptionLinks = styled.h4<{ active: boolean }>`
 `;
 
 const Text = styled.h2`
-  color: white;
+  color: black;
 `;
 
 export {

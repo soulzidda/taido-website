@@ -10,7 +10,7 @@ const Container = styled.div`
 `;
 
 const Text = styled.text`
-  color: White;
+  color: black;
 `;
 
 export { Container, Text };

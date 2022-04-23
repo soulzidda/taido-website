@@ -5,19 +5,19 @@ const Container = styled.div`
 `;
 
 const SubHeading = styled.h3`
-  color: white;
+  color: black;
 `;
 
 const ParagraphText = styled.p`
-  color: white;
+  color: black;
 `;
 
 const BannerText = styled.span`
-  color: white;
+  color: black;
 `;
 
 const List = styled("li")`
-  color: white;
+  color: black;
 `;
 
 const Heading = styled.h1`

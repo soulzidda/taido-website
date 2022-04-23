@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import { Header, Footer } from "./components";
+import { Header, Footer, Splitter } from "./components";
 import {
   TrainingPage,
   KalenderPage,
@@ -21,8 +21,8 @@ function App() {
   return (
     <AppContainer>
       <Header />
+      <Splitter />
       <ContentContainer>
-        <Divider />
         <Routes>
           <Route path="/" element={<SplashPage />} />
           <Route path="/training" element={<TrainingPage />} />
@@ -31,7 +31,6 @@ function App() {
           <Route path="/barn" element={<BarnPage />} />
           <Route path="/kontact" element={<KontactPage />} />
         </Routes>
-        <Divider />
       </ContentContainer>
       <Footer />
     </AppContainer>

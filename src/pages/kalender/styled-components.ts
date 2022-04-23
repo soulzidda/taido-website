@@ -8,6 +8,7 @@ const PageContainer = styled.div`
   padding: 0 30px 0 30px;
   flex: 1;
   width: auto;
+  margin-top: 50px;
 `;
 
 const Text = styled.text`

@@ -29,6 +29,7 @@ const SplashPage: React.FC = () => {
     <PageContainer>
       <ContentRow>
         <InformationContainer>
+          <Header>Add back to top button at bottom right !</Header>
           <Header>Välkommen till Stockholms Taidoförening!</Header>
           <Text>
             Vi erbjuder allsidig fysisk och mental träning för både barn och

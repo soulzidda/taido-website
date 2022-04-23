@@ -12,12 +12,12 @@ const Container = styled.div`
 
 const LogoContainer = styled(Link)`
   height: 100%;
-  padding-top: 50px;
+  padding-top: 10px;
   width: auto;
 `;
 
 const OptionsContainer = styled("div")<{ bottomPadding: boolean }>`
-  height: 70px;
+  height: 50px;
   width: auto;
   display: flex;
   align-items: center;
@@ -28,7 +28,7 @@ const OptionsContainer = styled("div")<{ bottomPadding: boolean }>`
 const OptionLink = styled(Link)<{ active: boolean }>`
   padding: 10px 15px;
   cursor: pointer;
-  color: White;
+  color: white;
   text-align: center;
   text-decoration: none;
   margin: 1rem;
@@ -37,7 +37,7 @@ const OptionLink = styled(Link)<{ active: boolean }>`
 `;
 
 const MainLogo = styled.img`
-  height: 250px;
+  height: 200px;
 `;
 
 export { Container, LogoContainer, OptionsContainer, OptionLink, MainLogo };

@@ -5,9 +5,9 @@ const PageContainer = styled.div`
   flex: 1;
   flex-direction: column;
   width: auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 0 30px 0 30px;
   align-items: center;
+  margin-top: 50px;
 `;
 
 const RowContainer = styled.div`
@@ -25,11 +25,11 @@ const TopRowCards = styled.div`
 `;
 
 const Heading = styled.h2`
-  color: White;
+  color: black;
 `;
 
 const SubHeading = styled.h3`
-  color: White;
+  color: black;
 `;
 
 const MapCards = styled.div`
@@ -46,11 +46,11 @@ const MapImage = styled.img`
 `;
 
 const Text = styled.p`
-  color: White;
+  color: black;
 `;
 
 const HyperlinkInfoText = styled.span`
-  color: white;
+  color: black;
 `;
 
 const HyperLink = styled.a`

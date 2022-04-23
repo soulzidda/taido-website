@@ -124,7 +124,7 @@ const KontactPage: React.FC = () => {
             </ContactSpacing>
           </LocationBox>
           <LocationBox>
-            <LocationSubHeading>Andra Kontakt</LocationSubHeading>
+            <LocationSubHeading>Styrelsen</LocationSubHeading>
             <ContactSpacing>
               <BoldText>Kassör :</BoldText>
               <Text> theresia.aruen@gmail.com</Text>

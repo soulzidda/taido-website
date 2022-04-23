@@ -11,7 +11,7 @@ const Container = styled.div`
 const InstructorCard = styled.div`
   width: 150px;
   height: 200px;
-  border: 1px solid white;
+  border: 1px solid black;
   margin: 10px 10px 10px 10px;
 `;
 

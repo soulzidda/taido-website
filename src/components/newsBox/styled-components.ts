@@ -3,12 +3,12 @@ import styled from "styled-components";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 55%;
   padding: 10px;
 `;
 
 const Header = styled.h2`
-  color: white;
+  color: black;
   text-decoration: none;
 `;
 
@@ -19,7 +19,7 @@ const Spacing = styled.div`
 const ArticleContainer = styled.div`
   display: flex;
   height: 100%;
-  border: 1px solid white;
+  border: 1px solid black;
   padding: 20px 10px 20px 10px;
   flex-direction: row;
 `;
@@ -37,11 +37,11 @@ const ImageContainer = styled.div`
 `;
 
 const ArticleHeaderText = styled.h3`
-  color: white;
+  color: black;
 `;
 
 const ArticleBodyText = styled.span`
-  color: white;
+  color: black;
 `;
 
 const CenterImage = styled.div`

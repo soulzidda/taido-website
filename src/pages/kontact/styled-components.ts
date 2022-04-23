@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 const PageContainer = styled.div`
   display: flex;
+  flex: 1;
+  width: auto;
   flex-direction: column;
   align-content: space-between;
   align-items: center;
   padding: 0 30px 0 30px;
-  flex: 1;
-  width: auto;
+  margin-top: 50px;
 `;
 
 const EmailFormContainer = styled.div`
@@ -62,15 +63,15 @@ const ButtonContainer = styled.div`
 `;
 
 const Heading = styled.h2`
-  color: White;
+  color: black;
 `;
 
 const SubHeading = styled.h3`
-  color: White;
+  color: black;
 `;
 
 const LocationSubHeading = styled.h3`
-  color: White;
+  color: black;
   text-align: center;
 `;
 
@@ -80,12 +81,12 @@ const ContactSpacing = styled.div`
 
 const BoldText = styled.span`
   font-weight: bold;
-  color: White;
+  color: black;
 `;
 
 const Text = styled.span`
   font-weight: normal;
-  color: White;
+  color: black;
 `;
 
 export {

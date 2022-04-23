@@ -1,5 +1,4 @@
 import React from "react";
-
 import {
   OptionsContainer,
   OptionLink,
@@ -14,15 +13,16 @@ export const Header: React.FC = () => {
   const location = useLocation().pathname;
 
   return (
-    <Container>
+    <Container
+      style={{
+        background:
+          "linear-gradient(to right,  #004bcc, #002f80, #00286b, #002f80, #004bcc)",
+      }}
+    >
       <LogoContainer to="/">
         <MainLogo src={Logo} alt={"fireSpot"} />
       </LogoContainer>
-      <OptionsContainer
-        bottomPadding={
-          !(location.includes("/training") || location.includes("/staf"))
-        }
-      >
+      <OptionsContainer bottomPadding={false}>
         <OptionLink active={location.includes("/training")} to="/training">
           Training
         </OptionLink>

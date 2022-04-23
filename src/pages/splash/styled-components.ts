@@ -3,11 +3,11 @@ import styled from "styled-components";
 const PageContainer = styled.div`
   display: flex;
   flex-direction: column;
+  align-content: space-between;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 30px;
-  overflow-y: scroll;
-  background-color: #242526;
+  padding: 0 30px 0 30px;
+  flex: 1;
+  width: auto;
 `;
 
 const ContentRow = styled.div`
@@ -15,13 +15,12 @@ const ContentRow = styled.div`
   flex-direction: row;
   justify-content: space-between;
   padding-top: 30px;
-  width: 100%;
 `;
 
 const InformationContainer = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 60%;
+  max-width: 55%;
   padding: 10px;
 `;
 
@@ -35,9 +34,8 @@ const SecondaryInfoContainer = styled.div`
 
 const TertiaryInfoContainer = styled.div`
   display: flex;
-  width: 100%;
   height: 300px;
-  border: 1px solid white;
+  border: 1px solid black;
   flex-direction: column;
   padding: 10px;
 `;
@@ -55,16 +53,16 @@ const ColumnContainerSpacing = styled.div`
 `;
 
 const List = styled("li")`
-  color: white;
+  color: black;
 `;
 
 const Header = styled.h2`
-  color: white;
+  color: black;
   text-decoration: none;
 `;
 
 const Text = styled.text`
-  color: white;
+  color: black;
 `;
 
 export {

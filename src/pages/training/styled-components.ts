@@ -7,6 +7,7 @@ const PageContainer = styled.div`
   align-items: center;
   padding: 0 30px 0 30px;
   flex: 1;
+  margin-top: 50px;
   width: auto;
 `;
 
@@ -33,13 +34,13 @@ const RowContainer = styled.div`
 const InformationBoxes = styled.div`
   width: 45%;
   height: 400px;
-  border: 1px solid white;
+  border: 1px solid black;
 `;
 
 const OptionLinks = styled.h4<{ active: boolean }>`
   padding: 10px 15px;
   cursor: pointer;
-  color: White;
+  color: black;
   text-decoration: none;
   text-align: center;
   margin: 1rem;
@@ -48,7 +49,7 @@ const OptionLinks = styled.h4<{ active: boolean }>`
 `;
 
 const Text = styled.h2`
-  color: white;
+  color: black;
 `;
 
 export {
