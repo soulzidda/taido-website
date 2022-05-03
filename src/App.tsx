@@ -24,12 +24,12 @@ function App() {
       <Splitter />
       <ContentContainer>
         <Routes>
-          <Route path="/" element={<SplashPage />} />
-          <Route path="/training" element={<TrainingPage />} />
-          <Route path="/kalender" element={<KalenderPage />} />
-          <Route path="/staf" element={<OmStafPage />} />
-          <Route path="/barn" element={<BarnPage />} />
-          <Route path="/kontact" element={<KontactPage />} />
+          <Route path="/taido-website/" element={<SplashPage />} />
+          <Route path="/taido-website/training" element={<TrainingPage />} />
+          <Route path="/taido-website/kalender" element={<KalenderPage />} />
+          <Route path="/taido-website/staf" element={<OmStafPage />} />
+          <Route path="/taido-website/barn" element={<BarnPage />} />
+          <Route path="/taido-website/kontact" element={<KontactPage />} />
         </Routes>
       </ContentContainer>
       <Footer />
