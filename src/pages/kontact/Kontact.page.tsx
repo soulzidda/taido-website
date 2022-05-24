@@ -34,12 +34,12 @@ const KontactPage: React.FC = () => {
   const { user_name, user_email, message } = data;
   return (
     <PageContainer>
-      <Heading>Kontact oss</Heading>
+      <Heading>Kontaktuppgifter</Heading>
       <EmailFormContainer>
         <InputContainer>
           <HalfContainer>
             <div>
-              <SubHeading>Din Namn</SubHeading>
+              <SubHeading>Namn</SubHeading>
               <Input
                 type="text"
                 placeholder="Namn...."
@@ -53,7 +53,7 @@ const KontactPage: React.FC = () => {
               />
             </div>
             <div>
-              <SubHeading>Din Email</SubHeading>
+              <SubHeading>Emailadress</SubHeading>
               <Input
                 type="email"
                 placeholder="Email..."
@@ -65,7 +65,7 @@ const KontactPage: React.FC = () => {
             </div>
           </HalfContainer>
           <HalfContainer>
-            <SubHeading>Ditt meddelande för STaF</SubHeading>
+            <SubHeading>Ditt meddelande</SubHeading>
             <TextField
               placeholder="Meddelande..."
               value={message}
@@ -84,7 +84,7 @@ const KontactPage: React.FC = () => {
         </div>
         <LocationBoxContentContainer>
           <LocationBox>
-            <LocationSubHeading>Gubbengen</LocationSubHeading>
+            <LocationSubHeading>Gubbängen</LocationSubHeading>
 
             <ContactSpacing>
               <BoldText>Taido vuxna:</BoldText>
@@ -130,7 +130,7 @@ const KontactPage: React.FC = () => {
               <Text> theresia.aruen@gmail.com</Text>
             </ContactSpacing>
             <ContactSpacing>
-              <BoldText>Styrelsen :</BoldText>
+              <BoldText>Ordförande :</BoldText>
               <Text> ordf@taido.se</Text>
             </ContactSpacing>
           </LocationBox>
