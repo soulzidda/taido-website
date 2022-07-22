@@ -44,10 +44,15 @@ const Text = styled.h2`
   color: black;
 `;
 
+const ParagraphText = styled.p`
+  color: black;
+`;
+
 export {
   PageContainer,
   SubHeaderContainer,
   InformationBoxes,
   OptionLinks,
+  ParagraphText,
   Text,
 };
