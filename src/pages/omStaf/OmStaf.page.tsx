@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 
 import {
-  PageContainer,
-  SubHeaderContainer,
   InformationBoxes,
   OptionLinks,
+  PageContainer,
+  SubHeaderContainer,
   Text,
 } from "./styled-components";
 import { Membership } from "./tabs/Membership";
 import { InstructorsTab } from "./tabs/InstructorsTab";
-import { instructors } from "../../utils/instructors";
 
 const OmStafPage: React.FC = () => {
   const [isAbout, setIsAbout] = useState(true);
@@ -49,7 +48,7 @@ const OmStafPage: React.FC = () => {
 
       {isAbout ? (
         <InformationBoxes>
-          <Text> about the association</Text>
+          <Text>about the association</Text>
         </InformationBoxes>
       ) : isMembers ? (
         <InformationBoxes>
