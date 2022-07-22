@@ -7,10 +7,11 @@ interface ModalProps {
   children: any;
 }
 
-const InstructorModal: React.FC<ModalProps> = (props) => {
+const InstructorModal = (props: ModalProps) => {
   const { isOpen, children } = props;
 
   return (
+    // @ts-ignore
     <Modal isOpen={isOpen}>
       <ModalContainer>{children}</ModalContainer>
     </Modal>
