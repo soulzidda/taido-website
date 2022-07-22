@@ -11,7 +11,7 @@ import {
   TrainingPage,
 } from "./pages";
 
-import { AppContainer, ContentContainer } from "./app.styled-components";
+import { AppContainer, ContentContainer } from "./styled-components";
 
 function App() {
   return (
