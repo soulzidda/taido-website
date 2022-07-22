@@ -28,7 +28,7 @@ const NewsBox: React.FC = () => {
 
   return (
     <Container>
-      <Header>News</Header>
+      <Header>Nyheter</Header>
       {articles.map((a: NewsArticle) => (
         <Spacing>
           <ArticleContainer>

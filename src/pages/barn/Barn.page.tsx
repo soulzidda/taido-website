@@ -17,10 +17,10 @@ import GubbangenTubeMap from "../../assets/gubbangen_tube_map.png";
 const BarnPage: React.FC = () => {
   return (
     <PageContainer>
-      <Heading>Barninformation</Heading>
+      <Heading>Barnverksamhet</Heading>
       <RowContainer>
         <TopRowCards>
-          <SubHeading>Values And Ethos</SubHeading>
+          <SubHeading>Vad är Taido?</SubHeading>
           <Text>
             Taido är en japansk akrobatisk kampsport som passar barn bra då den
             främjar rörelseglädje, koordination, balans, styrka och kondition.
@@ -52,7 +52,7 @@ const BarnPage: React.FC = () => {
           </HyperLink>
         </TopRowCards>
         <TopRowCards>
-          <SubHeading>Training</SubHeading>
+          <SubHeading>Ett vanligt träningspass</SubHeading>
           <Text>
             Våra träningspass är utformade att på ett pedagogiskt sätt främja
             barnens sociala, mentala och fysiska utveckling. Vi har stort fokus
@@ -76,8 +76,8 @@ const BarnPage: React.FC = () => {
           </Text>
         </TopRowCards>
         <TopRowCards>
-          <SubHeading>Pris</SubHeading>
-          <Text>Pris Medlemsavgift 400kr/år </Text>
+          <SubHeading>Avgifter</SubHeading>
+          <Text>Medlemsavgift 400kr/år </Text>
           <Text>Terminsavgift 700kr/termin</Text>
         </TopRowCards>
       </RowContainer>

@@ -24,7 +24,7 @@ export const Header: React.FC = () => {
       </LogoContainer>
       <OptionsContainer bottomPadding={false}>
         <OptionLink active={location.includes("/training")} to="/training">
-          Training
+          Träning
         </OptionLink>
         <OptionLink active={location.includes("/kalender")} to="/kalender">
           Kalender
@@ -33,7 +33,7 @@ export const Header: React.FC = () => {
           Om STaF
         </OptionLink>
         <OptionLink active={location.includes("/barn")} to="/barn">
-          Barn
+          Barnträning
         </OptionLink>
         <OptionLink active={location.includes("/kontact")} to="/kontact">
           Kontakt
