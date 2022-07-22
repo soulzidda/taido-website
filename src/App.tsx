@@ -1,21 +1,17 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
-import { Header, Footer, Splitter } from "./components";
+import { Footer, Header, Splitter } from "./components";
 import {
-  TrainingPage,
-  KalenderPage,
   BarnPage,
+  KalenderPage,
   KontactPage,
   OmStafPage,
   SplashPage,
+  TrainingPage,
 } from "./pages";
 
-import {
-  AppContainer,
-  ContentContainer,
-  Divider,
-} from "./app.styled-components";
+import { AppContainer, ContentContainer } from "./app.styled-components";
 
 function App() {
   return (
